@@ -2359,6 +2359,7 @@ ul, ol {
 
     .line-info {
         text-align: left;
+        padding-left: 0.5rem;
     }
 
     .line-info h3 {
@@ -2379,7 +2380,7 @@ ul, ol {
     .line-steps {
         font-size: 0.8rem;
         margin-bottom: 0.75rem;
-        padding-left: 1.2rem;
+        padding-left: 1.7rem;
     }
 
     .line-steps li {
