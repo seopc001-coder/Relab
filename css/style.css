@@ -2216,10 +2216,12 @@ ul, ol {
         display: block !important;
         width: 100%;
         max-width: 280px;
-        height: 140px;
+        height: auto;
+        aspect-ratio: 2 / 1;
         margin: 0.75rem auto 0;
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
     }
 
     .feature-item__image::before,
@@ -2232,6 +2234,7 @@ ul, ol {
         height: 100%;
         object-fit: cover;
         border-radius: 8px;
+        display: block;
     }
 }
 
