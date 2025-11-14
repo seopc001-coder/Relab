@@ -2335,24 +2335,48 @@ ul, ol {
         margin-top: 0.25rem;
     }
 
+    .line-message {
+        display: none;
+    }
+
     .line-info {
         text-align: left;
     }
 
+    .line-info h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
     .line-info__title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 
     .line-info__text {
-        font-size: 0.85rem;
-        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .line-steps {
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
+        padding-left: 1.2rem;
+    }
+
+    .line-steps li {
+        padding: 0.25rem 0;
+    }
+
+    .privacy-notice {
+        font-size: 0.7rem;
+        margin-bottom: 0.75rem;
     }
 
     .line-info .btn-line {
         margin: 0 auto;
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
     }
 
     .qr-code {
