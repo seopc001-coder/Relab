@@ -2381,6 +2381,7 @@ ul, ol {
     .line-steps {
         font-size: 0.8rem;
         margin-bottom: 0.75rem;
+        margin-left: 1rem;
         padding-left: 2rem;
         padding-right: 1rem;
     }
