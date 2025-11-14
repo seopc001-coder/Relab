@@ -1,0 +1,10 @@
+# robots.txt for Re:ラボ LP
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /js/
+Disallow: /css/
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
