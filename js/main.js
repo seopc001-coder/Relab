@@ -76,9 +76,13 @@ const initHeader = () => {
     // Smooth scroll for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const target = link.getAttribute('href');
-            smoothScroll(target);
+
+            // Only prevent default and smooth scroll for anchor links (starting with #)
+            if (target.startsWith('#')) {
+                e.preventDefault();
+                smoothScroll(target);
+            }
 
             // Close mobile menu if open
             if (navMenu.classList.contains('active')) {
