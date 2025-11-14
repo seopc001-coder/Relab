@@ -2314,13 +2314,29 @@ ul, ol {
     }
 
     .contact__line {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto 1fr;
         padding: 1.5rem;
         gap: 1rem;
+        align-items: center;
+    }
+
+    .line-visual {
+        width: 80px;
+        height: 80px;
+        padding: 0.5rem;
+    }
+
+    .line-visual i {
+        font-size: 2rem;
+    }
+
+    .line-visual__text {
+        font-size: 0.6rem;
+        margin-top: 0.25rem;
     }
 
     .line-info {
-        text-align: center;
+        text-align: left;
     }
 
     .line-info__title {
