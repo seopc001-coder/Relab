@@ -2261,7 +2261,12 @@ ul, ol {
     }
 
     .feature-item__image {
-        display: none;
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0.75rem auto 0;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
     }
 
     .feature-item__image::before,
