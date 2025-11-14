@@ -2204,38 +2204,37 @@ ul, ol {
 
     .feature-item,
     .feature-item--reverse {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        gap: 0.5rem;
-        align-items: flex-start;
-        padding: 0.75rem;
+        display: block;
+        padding: 1rem;
         text-align: left;
     }
 
     .feature-item--reverse {
-        grid-template-columns: auto auto 1fr;
+        display: block;
     }
 
     .feature-item--reverse .feature-item__content {
-        order: 3;
+        order: initial;
     }
 
     .feature-item--reverse .feature-item__image {
-        order: 1;
+        order: initial;
     }
 
     .feature-item--reverse .feature-item__number {
-        order: 2;
+        order: initial;
     }
 
     .feature-item__number {
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 1;
-        padding-top: 0.25rem;
+        margin-bottom: 0.75rem;
+        display: block;
     }
 
     .feature-item__content {
         display: block;
+        margin-bottom: 0.75rem;
     }
 
     .feature-item__title {
@@ -2262,10 +2261,7 @@ ul, ol {
     }
 
     .feature-item__image {
-        width: 60px;
-        height: 60px;
-        flex-shrink: 0;
-        border-radius: 6px;
+        display: none;
     }
 
     .feature-item__image::before,
