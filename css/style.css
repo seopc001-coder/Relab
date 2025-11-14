@@ -2169,58 +2169,55 @@ ul, ol {
     .feature-item,
     .feature-item--reverse {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "number"
-            "header"
-            "text"
-            "list";
+        grid-template-columns: auto 1fr auto;
+        gap: 1rem;
+        align-items: center;
         padding: var(--spacing-md);
         text-align: left;
-        gap: var(--spacing-sm);
     }
 
-    .feature-item--reverse .feature-item__content,
-    .feature-item--reverse .feature-item__image,
+    .feature-item--reverse {
+        grid-template-columns: auto auto 1fr;
+    }
+
+    .feature-item--reverse .feature-item__content {
+        order: 3;
+    }
+
+    .feature-item--reverse .feature-item__image {
+        order: 1;
+    }
+
     .feature-item--reverse .feature-item__number {
-        order: initial;
+        order: 2;
     }
 
     .feature-item__number {
-        grid-area: number;
-        font-size: 3rem;
-        margin-bottom: 0;
+        font-size: 2.5rem;
     }
 
     .feature-item__content {
-        display: contents;
+        display: block;
     }
 
     .feature-item__title {
-        grid-area: header;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-bottom: 0;
-    }
-
-    .feature-item__image {
-        grid-area: header;
-        justify-self: end;
-        align-self: start;
-        width: 180px;
-        height: 180px;
-        margin: 0;
+        margin-bottom: var(--spacing-xs);
+        font-size: 1.1rem;
     }
 
     .feature-item__text {
-        grid-area: text;
-        margin-bottom: 0;
+        margin-bottom: var(--spacing-xs);
+        font-size: 0.9rem;
     }
 
     .feature-item__list {
-        grid-area: list;
+        font-size: 0.85rem;
+    }
+
+    .feature-item__image {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
     }
 
     .feature-item__image::before,
@@ -2236,6 +2233,14 @@ ul, ol {
 
     .contact__line {
         grid-template-columns: 1fr;
+    }
+
+    .line-info {
+        text-align: center;
+    }
+
+    .line-info .btn-line {
+        margin: 0 auto;
     }
 
     .footer__content {
