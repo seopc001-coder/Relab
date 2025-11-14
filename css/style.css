@@ -1150,6 +1150,8 @@ ul, ol {
     .results__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-sm);
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -1240,7 +1242,7 @@ ul, ol {
     opacity: 0;
     transform: translateY(30px);
     max-width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .pricing-card.animate {
@@ -1260,8 +1262,8 @@ ul, ol {
 
 .pricing-card__badge {
     position: absolute;
-    top: -8px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
     background: linear-gradient(135deg, var(--color-neon-primary), var(--color-neon-secondary));
     color: var(--color-black);
     padding: 0.5rem 1.5rem;
@@ -1269,6 +1271,7 @@ ul, ol {
     font-size: 0.875rem;
     font-weight: 700;
     box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+    z-index: 10;
 }
 
 .pricing-card__header {
@@ -2165,9 +2168,16 @@ ul, ol {
 
     .feature-item,
     .feature-item--reverse {
+        display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
+        grid-template-areas:
+            "number"
+            "header"
+            "text"
+            "list";
         padding: var(--spacing-md);
+        text-align: left;
+        gap: var(--spacing-sm);
     }
 
     .feature-item--reverse .feature-item__content,
@@ -2176,11 +2186,41 @@ ul, ol {
         order: initial;
     }
 
+    .feature-item__number {
+        grid-area: number;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    .feature-item__content {
+        display: contents;
+    }
+
+    .feature-item__title {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 0;
+    }
+
     .feature-item__image {
-        width: 100%;
-        max-width: 280px;
-        height: 280px;
-        margin: 0 auto;
+        grid-area: header;
+        justify-self: end;
+        align-self: start;
+        width: 180px;
+        height: 180px;
+        margin: 0;
+    }
+
+    .feature-item__text {
+        grid-area: text;
+        margin-bottom: 0;
+    }
+
+    .feature-item__list {
+        grid-area: list;
     }
 
     .feature-item__image::before,
@@ -2192,15 +2232,6 @@ ul, ol {
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
-
-    .feature-item__number {
-        font-size: 3rem;
-    }
-
-    .feature-item__list {
-        text-align: left;
-        max-width: 100%;
     }
 
     .contact__line {
@@ -2228,6 +2259,10 @@ ul, ol {
     :root {
         --spacing-lg: 3rem;
         --spacing-xl: 4rem;
+    }
+
+    .container {
+        padding: 0 1rem;
     }
 
     .mobile-break {
@@ -2274,9 +2309,15 @@ ul, ol {
         height: 100%;
     }
 
+    .results__grid {
+        gap: 1rem;
+        width: 100%;
+    }
+
     .result-card {
-        padding: var(--spacing-md);
+        padding: 1.5rem 1rem;
         min-height: 160px;
+        width: 100%;
     }
 
     .no-limits__list {

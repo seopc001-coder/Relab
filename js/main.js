@@ -88,14 +88,7 @@ const initHeader = () => {
         });
     });
 
-    // CTA buttons smooth scroll
-    const ctaButtons = document.querySelectorAll('a[href="#contact"]');
-    ctaButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            smoothScroll('#contact');
-        });
-    });
+    // CTA buttons smooth scroll (removed - now using direct LINE links)
 };
 
 // ===========================
@@ -115,10 +108,7 @@ const initFloatingCTA = () => {
         }
     });
 
-    floatingCta.addEventListener('click', (e) => {
-        e.preventDefault();
-        smoothScroll('#contact');
-    });
+    // Click handler removed - now using direct LINE link
 };
 
 // ===========================
