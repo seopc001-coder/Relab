@@ -2448,6 +2448,10 @@ ul, ol {
         font-size: 0.85rem;
     }
 
+    .pricing__guarantee {
+        margin-top: 1rem;
+    }
+
     .floating-cta {
         bottom: var(--spacing-sm);
         right: var(--spacing-sm);
