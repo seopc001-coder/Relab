@@ -2359,12 +2359,13 @@ ul, ol {
 
     .line-info {
         text-align: left;
-        padding-left: 0.5rem;
     }
 
     .line-info h3 {
         font-size: 1rem;
         margin-bottom: 0.5rem;
+        text-align: center;
+        padding-right: 1rem;
     }
 
     .line-info__title {
@@ -2380,7 +2381,7 @@ ul, ol {
     .line-steps {
         font-size: 0.8rem;
         margin-bottom: 0.75rem;
-        padding-left: 1.7rem;
+        padding-left: 1.2rem;
     }
 
     .line-steps li {
