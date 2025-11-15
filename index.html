@@ -37,9 +37,11 @@
     <!-- Preload critical resources -->
     <link rel="preload" as="style" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" as="image" href="./assets/logo.png">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Icons - Async Loading -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Organization Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -266,7 +268,7 @@
                         </ul>
                     </div>
                     <div class="feature-item__image">
-                        <img src="./assets/feature-01.jpg" alt="プロによる運用代行でフォロワー増加" class="feature-item__img">
+                        <img src="./assets/feature-01.jpg" alt="プロによる運用代行でフォロワー増加" class="feature-item__img" loading="lazy">
                     </div>
                 </article>
 
@@ -284,7 +286,7 @@
                         </ul>
                     </div>
                     <div class="feature-item__image">
-                        <img src="./assets/feature-02.jpg" alt="集客・店舗知名度UP" class="feature-item__img">
+                        <img src="./assets/feature-02.jpg" alt="集客・店舗知名度UP" class="feature-item__img" loading="lazy">
                     </div>
                 </article>
 
@@ -302,7 +304,7 @@
                         </ul>
                     </div>
                     <div class="feature-item__image">
-                        <img src="./assets/feature-03.jpg" alt="バズ化によるリーチ先拡大" class="feature-item__img">
+                        <img src="./assets/feature-03.jpg" alt="バズ化によるリーチ先拡大" class="feature-item__img" loading="lazy">
                     </div>
                 </article>
             </div>
@@ -485,7 +487,7 @@
                     </p>
                     <div class="review-card__author">
                         <div class="author__avatar">
-                            <img src="./assets/review-avatar-01.jpg.jpg" alt="お客様の声">
+                            <img src="./assets/review-avatar-01.jpg.jpg" alt="お客様の声" loading="lazy">
                         </div>
                         <div class="author__info">
                             <div class="author__name">A店 オーナー様</div>
@@ -500,7 +502,7 @@
                     </p>
                     <div class="review-card__author">
                         <div class="author__avatar">
-                            <img src="./assets/review-avatar-02.jpg.jpg" alt="お客様の声">
+                            <img src="./assets/review-avatar-02.jpg.jpg" alt="お客様の声" loading="lazy">
                         </div>
                         <div class="author__info">
                             <div class="author__name">B店 店長様</div>
@@ -515,7 +517,7 @@
                     </p>
                     <div class="review-card__author">
                         <div class="author__avatar">
-                            <img src="./assets/review-avatar-03.jpg.jpg" alt="お客様の声">
+                            <img src="./assets/review-avatar-03.jpg.jpg" alt="お客様の声" loading="lazy">
                         </div>
                         <div class="author__info">
                             <div class="author__name">C店 責任者様</div>
@@ -530,7 +532,7 @@
                     </p>
                     <div class="review-card__author">
                         <div class="author__avatar">
-                            <img src="./assets/review-avatar-04.jpg.jpg" alt="お客様の声">
+                            <img src="./assets/review-avatar-04.jpg.jpg" alt="お客様の声" loading="lazy">
                         </div>
                         <div class="author__info">
                             <div class="author__name">D店</div>
@@ -545,7 +547,7 @@
                     </p>
                     <div class="review-card__author">
                         <div class="author__avatar">
-                            <img src="./assets/review-avatar-05.jpg.jpg" alt="お客様の声">
+                            <img src="./assets/review-avatar-05.jpg.jpg" alt="お客様の声" loading="lazy">
                         </div>
                         <div class="author__info">
                             <div class="author__name">E店 責任者様</div>
@@ -560,7 +562,7 @@
                     </p>
                     <div class="review-card__author">
                         <div class="author__avatar">
-                            <img src="./assets/review-avatar-06.jpg.jpg" alt="お客様の声">
+                            <img src="./assets/review-avatar-06.jpg.jpg" alt="お客様の声" loading="lazy">
                         </div>
                         <div class="author__info">
                             <div class="author__name">F店 マネージャー様</div>
@@ -764,6 +766,6 @@
     </a>
 
     <!-- Scripts -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 </body>
 </html>
