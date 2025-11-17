@@ -154,6 +154,54 @@
     }
     </script>
 
+    <!-- Service Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Twitter運用代行サービス",
+      "provider": {
+        "@type": "Organization",
+        "name": "株式会社RED",
+        "alternateName": "Re:ラボ"
+      },
+      "areaServed": "JP",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Twitter運用代行プラン",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "仮契約プラン",
+              "description": "サービスを実際に体験できる無料キャンペーン"
+            },
+            "price": "0",
+            "priceCurrency": "JPY"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "本契約プラン",
+              "description": "フォロワー数に応じたラダー制料金"
+            },
+            "price": "25000",
+            "priceCurrency": "JPY"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+
 </head>
 <body>
     <!-- Header Navigation -->
