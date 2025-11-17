@@ -353,7 +353,7 @@ ul, ol {
 .hero__background-image {
     position: absolute;
     inset: 0;
-    background-image: url('../assets/hero-background.png');
+    background-image: url('../assets/hero-background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
