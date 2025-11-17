@@ -1576,7 +1576,7 @@ ul, ol {
 .cta__note {
     margin-top: var(--spacing-md);
     font-size: 0.875rem;
-    color: var(--color-gray-medium);
+    color: var(--color-gray-lighter);
 }
 
 /* ===========================
@@ -1774,7 +1774,7 @@ ul, ol {
 }
 
 .footer__bottom p {
-    color: var(--color-gray-medium);
+    color: var(--color-gray-lighter);
     font-size: 0.875rem;
 }
 
