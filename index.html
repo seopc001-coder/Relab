@@ -52,11 +52,16 @@
     <link rel="preload" as="image" href="./assets/logo.png" fetchpriority="high">
     <link rel="preload" as="image" href="./assets/hero-background.png" fetchpriority="high">
 
-    <!-- Font Awesome Icons - Async Loading -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <!-- SVG Icons Style -->
+    <style>
+        .icon-svg {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentColor;
+            vertical-align: middle;
+        }
+    </style>
 
     <!-- Font optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -210,6 +215,40 @@
 
 </head>
 <body>
+    <!-- SVG Icon Definitions -->
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- LINE Icon -->
+            <symbol id="icon-line" viewBox="0 0 24 24">
+                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+            </symbol>
+            <!-- Bullseye Icon -->
+            <symbol id="icon-bullseye" viewBox="0 0 512 512">
+                <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 240a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm0-192a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+            </symbol>
+            <!-- Chart Line Icon -->
+            <symbol id="icon-chart-line" viewBox="0 0 512 512">
+                <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
+            </symbol>
+            <!-- Bolt Icon -->
+            <symbol id="icon-bolt" viewBox="0 0 448 512">
+                <path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/>
+            </symbol>
+            <!-- Pencil Icon -->
+            <symbol id="icon-pencil" viewBox="0 0 512 512">
+                <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/>
+            </symbol>
+            <!-- Fire Icon -->
+            <symbol id="icon-fire" viewBox="0 0 448 512">
+                <path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"/>
+            </symbol>
+            <!-- Sync Icon -->
+            <symbol id="icon-sync" viewBox="0 0 512 512">
+                <path d="M142.9 142.9c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5c0 0 0 0 0 0H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM16 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L185 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H48.4h-.7H40c-13.3 0-24 10.7-24 24z"/>
+            </symbol>
+        </defs>
+    </svg>
+
     <!-- Header Navigation -->
     <header class="header" id="header">
         <nav class="nav container">
@@ -280,7 +319,7 @@
             </div>
             <div class="hero__cta">
                 <a href="https://page.line.me/648acqfx" class="btn-primary btn-large" target="_blank" rel="noopener">
-                    <span class="btn-icon"><i class="fab fa-line"></i></span>
+                    <span class="btn-icon"><svg class="icon-svg"><use href="#icon-line"/></svg></span>
                     LINEで相談
                 </a>
                 <p class="hero__cta-note">※今なら仮契約無料キャンペーン実施中</p>
@@ -302,17 +341,17 @@
             </div>
             <div class="about__content">
                 <div class="about__card">
-                    <div class="card__icon"><i class="fas fa-bullseye"></i></div>
+                    <div class="card__icon"><svg class="icon-svg"><use href="#icon-bullseye"/></svg></div>
                     <h3 class="card__title">ターゲット層へ確実にリーチ</h3>
                     <p class="card__text">ナイトワーク業界を熟知したプロが、最適なターゲット層へ効果的にアプローチ</p>
                 </div>
                 <div class="about__card">
-                    <div class="card__icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="card__icon"><svg class="icon-svg"><use href="#icon-chart-line"/></svg></div>
                     <h3 class="card__title">データドリブンな運用</h3>
                     <p class="card__text">分析ツールを活用しエンゲージメント率やリーチ数を最大化<br>PDCAサイクルで継続的に改善</p>
                 </div>
                 <div class="about__card">
-                    <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                    <div class="card__icon"><svg class="icon-svg"><use href="#icon-bolt"/></svg></div>
                     <h3 class="card__title">バズを生み出す企画力</h3>
                     <p class="card__text">トレンドを捉えた投稿とバズを生み出す企画で<br class="sp-only">店舗様、キャスト様の認知度を飛躍的に向上</p>
                 </div>
@@ -405,7 +444,7 @@
                 <div class="no-limits__features">
                     <div class="no-limit-card">
                         <div class="no-limit-card__icon">
-                            <i class="fas fa-pencil-alt"></i>
+                            <svg class="icon-svg"><use href="#icon-pencil"/></svg>
                         </div>
                         <h3 class="no-limit-card__title">月の投稿数</h3>
                         <div class="no-limit-card__value">無制限</div>
@@ -413,7 +452,7 @@
                     </div>
                     <div class="no-limit-card">
                         <div class="no-limit-card__icon">
-                            <i class="fas fa-fire"></i>
+                            <svg class="icon-svg"><use href="#icon-fire"/></svg>
                         </div>
                         <h3 class="no-limit-card__title">バズ狙い回数</h3>
                         <div class="no-limit-card__value">無制限</div>
@@ -421,7 +460,7 @@
                     </div>
                     <div class="no-limit-card">
                         <div class="no-limit-card__icon">
-                            <i class="fas fa-sync-alt"></i>
+                            <svg class="icon-svg"><use href="#icon-sync"/></svg>
                         </div>
                         <h3 class="no-limit-card__title">更新回数</h3>
                         <div class="no-limit-card__value">無制限</div>
@@ -434,7 +473,7 @@
                         <strong>Re:ラボは完全無制限</strong>。お店の成長に最適な運用が可能です。
                     </p>
                     <a href="https://page.line.me/648acqfx" class="btn-primary btn-large" target="_blank" rel="noopener">
-                        <i class="fab fa-line"></i> LINEで相談
+                        <svg class="icon-svg"><use href="#icon-line"/></svg> LINEで相談
                     </a>
                 </div>
             </div>
@@ -741,7 +780,7 @@
                     LINEで簡単にご相談いただけます。
                 </p>
                 <a href="https://page.line.me/648acqfx" class="btn-primary btn-large" target="_blank" rel="noopener">
-                    <span class="btn-icon"><i class="fab fa-line"></i></span>
+                    <span class="btn-icon"><svg class="icon-svg"><use href="#icon-line"/></svg></span>
                     LINEで相談
                 </a>
                 <p class="cta__note">※強引な営業は一切いたしません。<br class="sp-only">お気軽にお問い合わせください。</p>
@@ -835,7 +874,7 @@
 
     <!-- Floating CTA Button -->
     <a href="https://page.line.me/648acqfx" class="floating-cta" id="floatingCta" target="_blank" rel="noopener">
-        <span class="floating-cta__icon"><i class="fab fa-line"></i></span>
+        <span class="floating-cta__icon"><svg class="icon-svg"><use href="#icon-line"/></svg></span>
         <span class="floating-cta__text">LINEで相談</span>
     </a>
 
