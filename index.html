@@ -154,18 +154,31 @@
     }
     </script>
 
-    <!-- Service Structured Data (JSON-LD) -->
+    <!-- Local Business Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Twitter運用代行サービス",
-      "provider": {
-        "@type": "Organization",
-        "name": "株式会社RED",
-        "alternateName": "Re:ラボ"
+      "@type": "LocalBusiness",
+      "name": "Re:ラボ",
+      "description": "ナイトワーク業界特化のTwitter運用代行サービス",
+      "url": "https://relab.vercel.app",
+      "image": "https://relab.vercel.app/assets/og-image.jpg",
+      "priceRange": "¥25,000-",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      "areaServed": "JP",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "梅田1丁目1番3号大阪駅前第3ビル29F1-1-1号室",
+        "addressLocality": "大阪市北区",
+        "addressRegion": "大阪府",
+        "postalCode": "530-0001",
+        "addressCountry": "JP"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Twitter運用代行プラン",
@@ -191,13 +204,6 @@
             "priceCurrency": "JPY"
           }
         ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "6",
-        "bestRating": "5",
-        "worstRating": "1"
       }
     }
     </script>
