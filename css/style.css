@@ -1932,7 +1932,7 @@ ul, ol {
 .company-mission {
     text-align: center;
     margin-bottom: var(--spacing-xl);
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-md);
     background: var(--color-gray-dark);
     border: 2px solid var(--color-neon-primary);
     border-radius: 15px;
