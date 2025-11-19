@@ -1951,7 +1951,7 @@ ul, ol {
 }
 
 .company-mission__text {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     margin-bottom: var(--spacing-md);
 }
 
@@ -1999,7 +1999,7 @@ ul, ol {
 }
 
 .value-card__title {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     font-weight: 700;
     margin-bottom: var(--spacing-sm);
 }
