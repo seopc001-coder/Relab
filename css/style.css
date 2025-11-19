@@ -707,6 +707,7 @@ ul, ol {
 .card__icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-md);
+    text-align: center;
 }
 
 .card__icon i {
