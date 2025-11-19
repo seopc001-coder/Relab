@@ -718,6 +718,7 @@ ul, ol {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: var(--spacing-sm);
+    text-align: center;
 }
 
 .card__text {
