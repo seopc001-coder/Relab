@@ -539,7 +539,7 @@ ul, ol {
 .hero__description {
     font-size: clamp(0.9rem, 1.8vw, 1.125rem);
     color: var(--color-gray-light);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     opacity: 0;
     animation: fadeInUp 1s ease forwards 0.9s;
 }
@@ -548,7 +548,7 @@ ul, ol {
     display: flex;
     gap: var(--spacing-lg);
     justify-content: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     opacity: 0;
     animation: fadeInUp 1s ease forwards 1.2s;
 }
