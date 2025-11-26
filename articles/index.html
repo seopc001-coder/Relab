@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="リラボ(Re:ラボ)のSNS運用代行に関する記事一覧。ナイトワーク集客のノウハウや成功事例をご紹介します。">
+    <meta name="keywords" content="リラボ,ナイトワーク集客,ナイトワークSNS運用代行,Re:ラボ,SNS運用,記事">
+
+    <!-- OGP -->
+    <meta property="og:title" content="記事一覧 | リラボ(Re:ラボ)">
+    <meta property="og:description" content="ナイトワーク集客に関する記事一覧">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://relab.vercel.app/articles/">
+    <meta property="og:image" content="https://relab.vercel.app/assets/og-image.jpg">
+    <meta property="og:site_name" content="リラボ(Re:ラボ)">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="記事一覧 | リラボ(Re:ラボ)">
+    <meta name="twitter:description" content="ナイトワーク集客に関する記事一覧">
+    <meta name="twitter:image" content="https://relab.vercel.app/assets/og-image.jpg">
+
+    <title>記事一覧 | リラボ(Re:ラボ) - ナイトワーク集客のノウハウ</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo.webp">
+    <link rel="shortcut icon" href="../assets/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .articles-hero {
+            background: linear-gradient(135deg, #FF6B9D 0%, #C239B3 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+
+        .articles-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .articles-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .articles-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 107, 157, 0.2);
+        }
+
+        .article-card__image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #FF6B9D 0%, #C239B3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .article-card__content {
+            padding: 25px;
+        }
+
+        .article-card__category {
+            display: inline-block;
+            background: #FF6B9D;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .article-card__title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .article-card__description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .article-card__date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #FF6B9D 0%, #C239B3 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .articles-hero h1 {
+                font-size: 2rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../assets/logo.webp" alt="リラボ(Re:ラボ)">
+                </a>
+            </div>
+            <div class="navbar__menu">
+                <a href="../index.html#service" class="navbar__link">サービス</a>
+                <a href="../index.html#features" class="navbar__link">特徴</a>
+                <a href="../index.html#cases" class="navbar__link">実績</a>
+                <a href="../index.html#pricing" class="navbar__link">料金</a>
+                <a href="../index.html#faq" class="navbar__link">FAQ</a>
+                <a href="./index.html" class="navbar__link navbar__link--active">記事</a>
+                <a href="../company.html" class="navbar__link">会社概要</a>
+            </div>
+            <a href="https://line.me/R/ti/p/@your-line-id" class="navbar__cta" target="_blank" rel="noopener noreferrer">
+                無料相談
+            </a>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="articles-hero">
+        <h1>記事一覧</h1>
+        <p>ナイトワーク集客に関するノウハウや成功事例をご紹介</p>
+    </section>
+
+    <!-- 記事一覧 -->
+    <div class="articles-container">
+        <div class="articles-grid">
+            <!-- 記事1 -->
+            <a href="./nightwork-sns-strategy.html" class="article-card">
+                <div class="article-card__image">📱</div>
+                <div class="article-card__content">
+                    <span class="article-card__category">SNS運用代行</span>
+                    <h2 class="article-card__title">ナイトワークSNS運用代行で集客を成功させる5つの戦略</h2>
+                    <p class="article-card__description">ナイトワーク業界でSNS運用代行を活用し、効果的に集客を伸ばすための具体的な戦略をご紹介します。</p>
+                    <p class="article-card__date">2024年11月26日</p>
+                </div>
+            </a>
+
+            <!-- 記事2 -->
+            <a href="./relab-case-study.html" class="article-card">
+                <div class="article-card__image">📊</div>
+                <div class="article-card__content">
+                    <span class="article-card__category">成功事例</span>
+                    <h2 class="article-card__title">リラボ導入でフォロワー3倍増！実際の成功事例を詳しく解説</h2>
+                    <p class="article-card__description">リラボのナイトワークSNS運用代行サービスを利用して、わずか3ヶ月でフォロワーが3倍になった事例を詳しくご紹介します。</p>
+                    <p class="article-card__date">2024年11月26日</p>
+                </div>
+            </a>
+
+            <!-- 記事3 -->
+            <a href="./nightwork-customer-acquisition.html" class="article-card">
+                <div class="article-card__image">🎯</div>
+                <div class="article-card__content">
+                    <span class="article-card__category">ナイトワーク集客</span>
+                    <h2 class="article-card__title">ナイトワーク集客を最大化するSNS活用術【2024年最新版】</h2>
+                    <p class="article-card__description">ナイトワーク業界での集客に特化したSNS活用方法を、最新のトレンドと共に徹底解説します。</p>
+                    <p class="article-card__date">2024年11月26日</p>
+                </div>
+            </a>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="../index.html" class="back-to-home">トップページに戻る</a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Re:ラボ</h3>
+                    <p class="footer__text">ナイトワーク業界特化の<br>Twitter運用代行サービス</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">メニュー</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html#service">サービス</a></li>
+                        <li><a href="../index.html#features">特徴</a></li>
+                        <li><a href="../index.html#cases">実績</a></li>
+                        <li><a href="../index.html#pricing">料金</a></li>
+                        <li><a href="../company.html">会社概要</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">お問い合わせ</h4>
+                    <a href="https://line.me/R/ti/p/@your-line-id" class="footer__cta" target="_blank" rel="noopener noreferrer">
+                        LINE で相談
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 株式会社RED. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="../privacy-policy.html">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

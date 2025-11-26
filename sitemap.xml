@@ -23,4 +23,36 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
+
+    <!-- 記事一覧ページ -->
+    <url>
+        <loc>https://relab.vercel.app/articles/index.html</loc>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 記事: ナイトワークSNS運用代行で集客を成功させる5つの戦略 -->
+    <url>
+        <loc>https://relab.vercel.app/articles/nightwork-sns-strategy.html</loc>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 記事: リラボ導入でフォロワー3倍増！実際の成功事例 -->
+    <url>
+        <loc>https://relab.vercel.app/articles/relab-case-study.html</loc>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 記事: ナイトワーク集客を最大化するSNS活用術 -->
+    <url>
+        <loc>https://relab.vercel.app/articles/nightwork-customer-acquisition.html</loc>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
