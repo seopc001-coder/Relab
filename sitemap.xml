@@ -3,7 +3,7 @@
     <!-- トップページ -->
     <url>
         <loc>https://relab.vercel.app/</loc>
-        <lastmod>2024-11-26</lastmod>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,7 +11,7 @@
     <!-- 会社概要ページ -->
     <url>
         <loc>https://relab.vercel.app/company.html</loc>
-        <lastmod>2024-11-26</lastmod>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -19,7 +19,7 @@
     <!-- プライバシーポリシーページ -->
     <url>
         <loc>https://relab.vercel.app/privacy-policy.html</loc>
-        <lastmod>2024-11-26</lastmod>
+        <lastmod>2024-11-26T00:00:00+09:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
